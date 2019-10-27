@@ -1,3 +1,8 @@
-<p>
-  save-empresa works!
-</p>
+<form #empresaForm="ngForm" (ngSubmit)="onSaveEmpresa(empresaForm)">
+  <div class="form-group">
+    <label for="exampleInputEmail1">CIF</label>
+    <input type="text" class="form-control" id="inputCIF" name="inputCIF" placeholder="Enter CIF"
+      [(ngModel)]="inputCIF">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
