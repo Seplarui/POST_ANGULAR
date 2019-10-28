@@ -14,7 +14,8 @@ export class DataApiService {
 
   empresas: Observable<any>;
   empresa: Observable<any>;
-  headers = new HttpHeaders().set('Content-Type', 'text/plain; charset=utf-8');
+  // headers = new HttpHeaders().set('Content-Type', 'text/plain; charset=utf-8');
+  headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 
   saveEmpresa(empresa: EmpresaInterface) {
